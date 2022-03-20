@@ -1,7 +1,7 @@
-import { defineConfig, presetUno, presetAttributify } from 'unocss'
+import { defineConfig, presetUno, presetAttributify, presetIcons } from 'unocss'
 
 export default defineConfig({
-  presets: [presetUno({}), presetAttributify()],
+  presets: [presetUno(), presetAttributify(), presetIcons()],
   include: [`${__dirname}/**/*`],
   exclude: [`${__dirname}/node_modules/**/*`],
   theme: {
